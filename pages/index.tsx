@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-screen h-screen bg-black">
+    <main className="flex flex-col w-screen h-screen bg-black ">
       <Image
         src="/background.jpg"
         layout="fill"
