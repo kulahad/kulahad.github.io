@@ -74,7 +74,7 @@ export default function Home() {
             </a>
             <a
               className="p-2 mx-2 font-thin border border-white rounded-sm hover:bg-blue-600 hover:text-white"
-              href=""
+              href="CV-Mohammed Ahad.pdf"
             >
               Download Resume
             </a>
