@@ -2,11 +2,19 @@ import Head from "next/head";
 import Image from "next/image";
 import { MdEmail } from "react-icons/md";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import Typewriter from "typewriter-effect";
 
 export default function Home() {
   return (
     <main className="flex flex-col w-screen h-screen bg-black">
-      <div className="sticky z-50 border-b border-white ">
+      <Image
+        src="/background.jpg"
+        layout="fill"
+        quality="60"
+        objectFit="cover"
+        alt="Keyboard"
+      />
+      <div className="sticky z-50 bg-black border-b border-white bg-opacity-60">
         <nav className="container flex items-center justify-between w-screen h-12 mx-auto text-white ">
           <div className="mx-4">
             <p>Mohammed Ahad</p>
@@ -14,16 +22,16 @@ export default function Home() {
 
           <div className="flex mx-4">
             <a className="mx-2 " href="mailto:mohammed.muqtadir.ahad@gmail.com">
-              <MdEmail className="text-2xl " />
+              <MdEmail className="text-2xl hover:text-red-400" />
             </a>
             <a className="mx-2" href="https://github.com/kulahad">
-              <AiFillGithub className="text-2xl " />
+              <AiFillGithub className="text-2xl hover:text-gray-700" />
             </a>
             <a
               className="mx-2"
               href="https://www.linkedin.com/in/muqtadir-ahad/"
             >
-              <AiFillLinkedin className="text-2xl " />
+              <AiFillLinkedin className="text-2xl hover:text-blue-500" />
             </a>
             {/* <a className="m-1">
             <MdEmail />
@@ -32,9 +40,24 @@ export default function Home() {
         </nav>
       </div>
       <section className="container flex items-center w-full h-full mx-auto bg-background-pattern">
-        <div className="flex flex-col mx-4 text-white lg:w-1/3 ">
+        <div className="flex flex-col p-10 mx-4 text-white rounded-sm lg:w-1/3 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
           <h1 className="text-3xl font-normal ">
-            Software <span className="text-blue-500 ">Engineer</span>
+            Software{" "}
+            <span className="inline-block text-blue-500">
+              <Typewriter
+                options={{
+                  strings: [
+                    "Engineer",
+                    "Developer",
+                    "Innovator",
+                    "Creator",
+                    "Enthusiast",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </span>
           </h1>
           <p className="my-2 text-lg font-thin leading-6 ">
             Software Engineering graduate with a keen interest in learning and
@@ -44,13 +67,13 @@ export default function Home() {
           </p>
           <div className="flex justify-start">
             <a
-              className="p-2 border border-white rounded-sm hover:bg-blue-600 hover:text-white"
+              className="p-2 font-thin border border-white rounded-sm hover:bg-blue-600 hover:text-white"
               href=""
             >
               Contact Me
             </a>
             <a
-              className="p-2 mx-2 border border-white rounded-sm hover:bg-blue-600 hover:text-white"
+              className="p-2 mx-2 font-thin border border-white rounded-sm hover:bg-blue-600 hover:text-white"
               href=""
             >
               Download Resume
