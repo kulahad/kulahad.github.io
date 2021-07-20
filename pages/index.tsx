@@ -68,13 +68,7 @@ export default function Home() {
           <div className="flex justify-start">
             <a
               className="p-2 font-thin border border-white rounded-sm hover:bg-blue-600 hover:text-white"
-              href=""
-            >
-              Contact Me
-            </a>
-            <a
-              className="p-2 mx-2 font-thin border border-white rounded-sm hover:bg-blue-600 hover:text-white"
-              href="CV-Mohammed Ahad.pdf"
+              href="CV.pdf"
             >
               Download Resume
             </a>
