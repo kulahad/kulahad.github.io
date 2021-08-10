@@ -22,6 +22,11 @@ class AppDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Open+Sans|Lato&display=optional"
             rel="stylesheet"
           />
+          <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
+          />
+
           <Script
             src="https://kit.fontawesome.com/dba5f5b919.js"
             crossOrigin="anonymous"
