@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Typewriter from "typewriter-effect";
 
-export default function Home() {
+export default function Home({ quote }: { quote: Api.QuoteResponse }) {
   return (
     <main className="flex flex-col w-screen h-screen bg-black ">
       <Image
@@ -39,6 +39,16 @@ export default function Home() {
           </div>
         </nav>
       </div>
+      <section className="container z-0 flex items-center mx-auto text-white">
+        {quote && (
+          <p className="my-2 text-lg font-thin leading-6 ">
+            {`"${quote.contents.quotes[0].quote}" - `}
+            <span className="italic font-bold ">
+              {quote.contents.quotes[0].author}
+            </span>
+          </p>
+        )}
+      </section>
       <section className="container flex items-center w-full h-full mx-auto bg-background-pattern">
         <div className="flex flex-col p-10 mx-4 text-white rounded-sm lg:w-1/3 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
           <h1 className="text-3xl font-normal ">
@@ -77,4 +87,24 @@ export default function Home() {
       </section>
     </main>
   );
+}
+
+export async function getStaticProps() {
+  try {
+    const quote = await fetch("https://quotes.rest/qod").then((res) =>
+      res.json()
+    );
+
+    return {
+      props: {
+        quote: quote,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        quote: null,
+      },
+    };
+  }
 }
