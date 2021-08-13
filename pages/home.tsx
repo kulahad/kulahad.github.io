@@ -9,7 +9,7 @@ export default function home() {
   return (
     <main className="flex items-end w-screen h-screen lg:flex-col">
       <div className="relative flex w-full h-full ">
-        <section className="absolute z-50 flex flex-col bg-white lg:w-1/2 lg:h-full font-secondary">
+        <section className="absolute z-50 flex-col hidden bg-white lg:flex lg:w-1/2 lg:h-full font-secondary">
           <div className="m-4 ">
             <p className="inline p-2 text-lg font-semibold text-white bg-black hover:bg-white hover:text-red-600">
               Mohammed Ahad
@@ -50,7 +50,7 @@ export default function home() {
           {/* content */}
           <div
             id="About"
-            className="flex items-center w-full h-full m-auto background-circles"
+            className="flex items-center w-full h-full max-h-screen m-auto background-circles"
           >
             <div className="flex flex-col p-10 mx-4 text-white rounded-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
               <h1 className="text-3xl font-normal ">
@@ -89,7 +89,7 @@ export default function home() {
           </div>
           <div
             id="Education"
-            className="flex items-center justify-center w-full h-full m-auto background-contour"
+            className="flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-contour"
           >
             <div className="flex flex-col p-10 mx-4 text-white rounded-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
               <h1 className="py-2 my-2 text-4xl font-normal border-b border-white">
