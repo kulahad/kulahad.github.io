@@ -1,14 +1,15 @@
 import React from "react";
+import Link from "next/link";
 import { MdEmail } from "react-icons/md";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Typewriter from "typewriter-effect";
+import { Chrono } from "react-chrono";
 
 export default function home() {
-  const bg = `data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1014%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M878.82 208.77 a96.45 96.45 0 1 0 192.9 0 a96.45 96.45 0 1 0 -192.9 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1001.15 421.68 a171.05 171.05 0 1 0 342.1 0 a171.05 171.05 0 1 0 -342.1 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M848.69 298.9 a151.54 151.54 0 1 0 303.08 0 a151.54 151.54 0 1 0 -303.08 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1136.28 27.93 a180.1 180.1 0 1 0 360.2 0 a180.1 180.1 0 1 0 -360.2 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-72.04 409.91 a97.19 97.19 0 1 0 194.38 0 a97.19 97.19 0 1 0 -194.38 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M479.45 125.79 a114.17 114.17 0 1 0 228.34 0 a114.17 114.17 0 1 0 -228.34 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1014'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e`;
   return (
-    <main className="flex w-screen h-screen lg:flex-col">
-      <div className="flex w-full h-full ">
-        <section className="flex flex-col bg-white lg:w-1/2 lg:h-full font-secondary">
+    <main className="flex items-end w-screen h-screen lg:flex-col">
+      <div className="relative flex w-full h-full ">
+        <section className="absolute z-50 flex flex-col bg-white lg:w-1/2 lg:h-full font-secondary">
           <div className="m-4 ">
             <p className="inline p-2 text-lg font-semibold text-white bg-black hover:bg-white hover:text-red-600">
               Mohammed Ahad
@@ -45,7 +46,7 @@ export default function home() {
           </div>
           {/* Navigation */}
         </section>
-        <section className="flex flex-col items-start bg-black lg:w-1/2 lg:h-full">
+        <section className="ml-auto overflow-scroll bg-black no-scrollbar lg:h-full lg:w-1/2">
           {/* content */}
           <div
             id="About"
@@ -53,7 +54,7 @@ export default function home() {
           >
             <div className="flex flex-col p-10 mx-4 text-white rounded-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
               <h1 className="text-3xl font-normal ">
-                {`Hi there, I'am Ahad - Software `}
+                {`Hi there 👋, I'am Ahad - Software `}
                 <span className="inline-block text-red-500">
                   <Typewriter
                     options={{
@@ -83,6 +84,72 @@ export default function home() {
                 >
                   Download Resume
                 </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="Education"
+            className="flex items-center justify-center w-full h-full m-auto background-contour"
+          >
+            <div className="flex flex-col p-10 mx-4 text-white rounded-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
+              <h1 className="py-2 my-2 text-4xl font-normal border-b border-white">
+                Education 🎓
+              </h1>
+
+              <div className="m-1">
+                <h1 className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                  Bachelor of Software Engineering: 2016 – 2019
+                </h1>
+                <h1 className="font-normal ">
+                  The University of the South Pacific, Laucala Bay, Fiji Islands
+                </h1>
+                <h1 className="font-normal ">GPA – 3.54 </h1>
+              </div>
+
+              <div className="m-1">
+                <h1 className="py-2 my-2 text-xl font-normal border-b border-red-300">
+                  Secondary School: 2011 - 2015 Pundit Vishnu Deo Memorial
+                  College
+                </h1>
+                <h1 className="font-normal ">
+                  Saweni, Lautoka City, Fiji Islands
+                </h1>
+                <h1 className="font-normal ">
+                  Tech-Science Student - Mathematics, English, Physics,
+                  Technical Drawing, Computing Science{" "}
+                </h1>
+              </div>
+              <div className="m-1">
+                <h1 className="py-2 my-2 text-xl font-normal border-b border-red-300">
+                  Primary School: 2002 - 2010 Gurukul Primary School
+                </h1>
+                <h1 className="font-normal ">
+                  Saweni, Lautoka City, Fiji Islands
+                </h1>
+              </div>
+
+              <h1 className="py-2 my-2 text-4xl font-normal border-b border-white">
+                Achievements 🏆
+              </h1>
+              <div className="m-1">
+                <h1 className="py-2 my-2 text-xl font-normal border-b border-red-300">
+                  DUX Award – 2015
+                </h1>
+                <h1 className="font-normal ">Pundit Vishnu Deo Memorial</h1>
+              </div>
+
+              <div className="m-1">
+                <h1 className="py-2 my-2 text-xl font-normal border-b border-red-300">
+                  Outstanding student of the year (Year 12 – Form 6) – 2014
+                </h1>
+                <h1 className="font-normal ">Pundit Vishnu Deo Memorial</h1>
+              </div>
+
+              <div className="m-1">
+                <h1 className="py-2 my-2 text-xl font-normal border-b border-red-300">
+                  Outstanding student of the year (Year 11 – Form 5) – 2013
+                </h1>
+                <h1 className="font-normal ">Pundit Vishnu Deo Memorial</h1>
               </div>
             </div>
           </div>
