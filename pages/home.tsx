@@ -92,64 +92,156 @@ export default function home() {
             className="flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-contour"
           >
             <div className="flex flex-col p-10 mx-4 text-white rounded-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
-              <h1 className="py-2 my-2 text-4xl font-normal border-b border-white">
+              <p className="py-2 my-2 text-4xl font-normal border-b border-white">
                 Education 🎓
-              </h1>
+              </p>
 
               <div className="m-1">
-                <h1 className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                <p className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
                   Bachelor of Software Engineering: 2016 – 2019
-                </h1>
-                <h1 className="font-normal ">
+                </p>
+                <p className="font-normal ">
                   The University of the South Pacific, Laucala Bay, Fiji Islands
-                </h1>
-                <h1 className="font-normal ">GPA – 3.54 </h1>
+                </p>
+                <p className="font-normal ">GPA – 3.54 </p>
               </div>
 
               <div className="m-1">
-                <h1 className="py-2 my-2 text-xl font-normal border-b border-red-300">
+                <p className="py-2 my-2 text-xl font-normal border-b border-red-300">
                   Secondary School: 2011 - 2015 Pundit Vishnu Deo Memorial
                   College
-                </h1>
-                <h1 className="font-normal ">
+                </p>
+                <p className="font-normal ">
                   Saweni, Lautoka City, Fiji Islands
-                </h1>
-                <h1 className="font-normal ">
+                </p>
+                <p className="font-normal ">
                   Tech-Science Student - Mathematics, English, Physics,
                   Technical Drawing, Computing Science{" "}
-                </h1>
+                </p>
               </div>
               <div className="m-1">
-                <h1 className="py-2 my-2 text-xl font-normal border-b border-red-300">
+                <p className="py-2 my-2 text-xl font-normal border-b border-red-300">
                   Primary School: 2002 - 2010 Gurukul Primary School
-                </h1>
-                <h1 className="font-normal ">
+                </p>
+                <p className="font-normal ">
                   Saweni, Lautoka City, Fiji Islands
-                </h1>
+                </p>
               </div>
 
-              <h1 className="py-2 my-2 text-4xl font-normal border-b border-white">
+              <p className="py-2 my-2 text-4xl font-normal border-b border-white">
                 Achievements 🏆
-              </h1>
+              </p>
               <div className="m-1">
-                <h1 className="py-2 my-2 text-xl font-normal border-b border-red-300">
+                <p className="py-2 my-2 text-xl font-normal border-b border-red-300">
                   DUX Award – 2015
-                </h1>
-                <h1 className="font-normal ">Pundit Vishnu Deo Memorial</h1>
+                </p>
+                <p className="font-normal ">Pundit Vishnu Deo Memorial</p>
               </div>
 
               <div className="m-1">
-                <h1 className="py-2 my-2 text-xl font-normal border-b border-red-300">
+                <p className="py-2 my-2 text-xl font-normal border-b border-red-300">
                   Outstanding student of the year (Year 12 – Form 6) – 2014
-                </h1>
-                <h1 className="font-normal ">Pundit Vishnu Deo Memorial</h1>
+                </p>
+                <p className="font-normal ">Pundit Vishnu Deo Memorial</p>
               </div>
 
               <div className="m-1">
-                <h1 className="py-2 my-2 text-xl font-normal border-b border-red-300">
+                <p className="py-2 my-2 text-xl font-normal border-b border-red-300">
                   Outstanding student of the year (Year 11 – Form 5) – 2013
-                </h1>
-                <h1 className="font-normal ">Pundit Vishnu Deo Memorial</h1>
+                </p>
+                <p className="font-normal ">Pundit Vishnu Deo Memorial</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="Experience"
+            className="flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-contour"
+          >
+            <div className="flex flex-col p-10 mx-4 text-white rounded-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
+              <p className="py-2 my-1 text-4xl font-normal border-b border-white">
+                Experience ⚙️
+              </p>
+
+              <div className="m-1">
+                <p className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                  Open Educational Resources Technologist
+                  <p className="font-normal ">
+                    Centre for Learning & Teaching Enhancement - 09/2020 -
+                    Current
+                  </p>
+                </p>
+                <p className="font-normal ">
+                  Fiji National University, Nasinu, Suva, Fiji Islands
+                </p>
+                <p className="font-normal ">
+                  <ul>
+                    <li>
+                      • Develop educational and custom applications to assist
+                      students and staff.
+                    </li>
+                    <li>• Graphic design, Video editing</li>
+                  </ul>
+                </p>
+              </div>
+
+              <div className="m-1">
+                <p className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                  Developer – Technical Department
+                  <p className="font-normal ">
+                    QIT Pacific - 06/2020 - 09/2020
+                  </p>
+                </p>
+                <p className="font-normal ">Sports City, Suva, Fiji Islands</p>
+                <p className="font-normal ">
+                  <ul>
+                    <li>• Develop software solutions for local clients.</li>
+                    <li>• Requirements engineering and analysis.</li>
+                  </ul>
+                </p>
+              </div>
+
+              <div className="m-1">
+                <p className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                  Graduate Developer – Technical Services
+                  <p className="font-normal ">Acton Fiji - 11/2019 - 05/2020</p>
+                </p>
+                <p className="font-normal ">
+                  30 Desvoux Road, Suva, Fiji Islands
+                </p>
+                <p className="font-normal ">
+                  <ul>
+                    <li>
+                      • Out sourced work for Akari Software, Ireland. Full-stack
+                      development.
+                    </li>
+                    <li>• Representing the team in meetings.</li>
+                  </ul>
+                </p>
+              </div>
+
+              <div className="m-1">
+                <p className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                  IT Intern
+                  <p className="font-normal ">
+                    IT Department- 06/2016 - 02/2018
+                  </p>
+                </p>
+                <p className="font-normal ">
+                  The University of the South Pacific, Laucala Bay, Fiji Islands
+                </p>
+                <p className="font-normal ">
+                  <ul>
+                    <li>
+                      • Configuration of Software and firmware on new students’
+                      PCs, Lab monitoring and care.
+                    </li>
+                    <li>
+                      • Logging requests to various technicians, Closing Labs
+                      after hours
+                    </li>
+                  </ul>
+                </p>
               </div>
             </div>
           </div>
