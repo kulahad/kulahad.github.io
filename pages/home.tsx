@@ -1,9 +1,7 @@
 import React from "react";
-import Link from "next/link";
 import { MdEmail } from "react-icons/md";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Typewriter from "typewriter-effect";
-import { Chrono } from "react-chrono";
 
 export default function home() {
   return (
