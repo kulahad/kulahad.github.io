@@ -45,3 +45,7 @@ a {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.dev-icon {
+  @apply mx-4 text-4xl;
+}

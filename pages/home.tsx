@@ -243,6 +243,83 @@ export default function home() {
               </div>
             </div>
           </div>
+
+          <div
+            id="Technologies"
+            className="flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-contour"
+          >
+            <div className="flex flex-col p-10 mx-4 text-white rounded-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
+              <p className="py-2 my-1 text-4xl font-normal border-b border-white">
+                Technologies 👨‍💻
+              </p>
+              <div>
+                <div className="flex items-center my-2">
+                  <p>Android Java</p>
+                  <i className="dev-icon devicon-android-plain colored"></i>
+                </div>
+                <div className="flex items-center my-2">
+                  <p>ASP.NET, Entity Framework, Web API 2, LINQ</p>
+                  <i className="dev-icon devicon-dot-net-plain-wordmark colored"></i>
+                </div>
+                <div className="flex items-center my-2">
+                  <p>C#</p>
+                  <i className="dev-icon devicon-csharp-plain-wordmark colored"></i>
+                </div>
+                <div className="flex items-center my-2">
+                  <p>Java</p>
+                  <i className="dev-icon devicon-java-plain colored"></i>
+                </div>
+                <div className="flex items-center my-2">
+                  <p>JavaScript</p>
+                  <i className="dev-icon devicon-javascript-plain colored"></i>
+                  <p>TypeScript</p>
+                  <i className="dev-icon devicon-typescript-plain colored"></i>
+                  <p>JQuery</p>
+                  <i className="dev-icon devicon-jquery-plain-wordmark colored"></i>
+                  <p>NodeJS</p>
+                  <i className="dev-icon devicon-nodejs-plain-wordmark colored"></i>
+                </div>
+                <div className="flex items-center my-2">
+                  <p>Vue</p>
+                  <i className="dev-icon devicon-vuejs-plain-wordmark colored"></i>
+                  <p>React</p>
+                  <i className="dev-icon devicon-react-original colored"></i>
+                  <p>NextJS</p>
+                  <i className="dev-icon devicon-nextjs-original-wordmark"></i>
+                  <p>NestJS</p>
+                  <i className="dev-icon devicon-nestjs-plain-wordmark colored"></i>
+                </div>
+                <div className="flex items-center my-2">
+                  <p>HTML</p>
+                  <i className="dev-icon devicon-html5-plain-wordmark colored"></i>
+                  <p>CSS</p>
+                  <i className="dev-icon devicon-css3-plain-wordmark colored"></i>
+                  <p>Bootstrap</p>
+                  <i className="dev-icon devicon-bootstrap-plain-wordmark colored"></i>
+                  <p>Tailwind CSS</p>
+                  <i className="dev-icon devicon-tailwindcss-original-wordmark colored"></i>
+                </div>
+                <div className="flex items-center my-2">
+                  <p>MySQL</p>
+                  <i className="dev-icon devicon-mysql-plain-wordmark colored"></i>
+                  <p>Oracle</p>
+                  <i className="dev-icon devicon-oracle-original colored"></i>
+                  <p>MongoDB</p>
+                  <i className="dev-icon devicon-mongodb-plain-wordmark colored"></i>
+                </div>
+                <div className="flex items-center my-2">
+                  <p>Git</p>
+                  <i className="dev-icon devicon-git-plain-wordmark colored"></i>
+                  <p>GitHub</p>
+                  <i className="dev-icon devicon-github-original-wordmark"></i>
+                </div>
+                <div className="flex items-center my-2">
+                  <p>Figma</p>
+                  <i className="dev-icon devicon-figma-plain colored"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>
