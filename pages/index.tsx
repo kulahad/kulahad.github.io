@@ -62,19 +62,27 @@ export default function Home() {
               Technologies
             </h1>
           </div>
-          <div className="flex p-4 ml-auto text-4xl">
-            <a className="mx-2 " href="mailto:mohammed.muqtadir.ahad@gmail.com">
-              <MdEmail className="hover:text-red-400" />
-            </a>
-            <a className="mx-2" href="https://github.com/kulahad">
-              <AiFillGithub className="hover:text-gray-700" />
-            </a>
-            <a
-              className="mx-2"
-              href="https://www.linkedin.com/in/muqtadir-ahad/"
-            >
-              <AiFillLinkedin className="hover:text-blue-500" />
-            </a>
+          <div className="flex items-center justify-between w-full ">
+            <div className="mx-4 text-gray-700 text-normal">
+              Made with NextJS and Tailwind CSS ❤️❤️❤️
+            </div>
+            <div className="flex p-4 text-4xl">
+              <a
+                className="mx-2 "
+                href="mailto:mohammed.muqtadir.ahad@gmail.com"
+              >
+                <MdEmail className="hover:text-red-400" />
+              </a>
+              <a className="mx-2" href="https://github.com/kulahad">
+                <AiFillGithub className="hover:text-gray-700" />
+              </a>
+              <a
+                className="mx-2"
+                href="https://www.linkedin.com/in/muqtadir-ahad/"
+              >
+                <AiFillLinkedin className="hover:text-blue-500" />
+              </a>
+            </div>
             {/* <a className="m-1">
             <MdEmail />
           </a> */}
