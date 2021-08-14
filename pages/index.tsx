@@ -68,7 +68,7 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-between w-full ">
             <div className="mx-4 text-gray-700 text-normal">
-              Made with NextJS and Tailwind CSS ❤️❤️❤️
+              Made with NextJS and Tailwind CSS by Kulahad❤️❤️❤️
             </div>
             <div className="flex p-4 text-4xl">
               <a
