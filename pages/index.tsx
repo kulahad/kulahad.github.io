@@ -61,6 +61,10 @@ export default function Home() {
             >
               Technologies
             </h1>
+            <h1 className="navigation-item ">
+              Projects
+              <span className="mx-2 text-2xl text-white">Coming Soon</span>
+            </h1>
           </div>
           <div className="flex items-center justify-between w-full ">
             <div className="mx-4 text-gray-700 text-normal">
