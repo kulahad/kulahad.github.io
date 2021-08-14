@@ -162,13 +162,13 @@ export default function home() {
               </p>
 
               <div className="m-1">
-                <p className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
                   Open Educational Resources Technologist
                   <p className="font-normal ">
                     Centre for Learning & Teaching Enhancement - 09/2020 -
                     Current
                   </p>
-                </p>
+                </div>
                 <p className="font-normal ">
                   Fiji National University, Nasinu, Suva, Fiji Islands
                 </p>
@@ -182,12 +182,12 @@ export default function home() {
               </div>
 
               <div className="m-1">
-                <p className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
                   Developer – Technical Department
                   <p className="font-normal ">
                     QIT Pacific - 06/2020 - 09/2020
                   </p>
-                </p>
+                </div>
                 <p className="font-normal ">Sports City, Suva, Fiji Islands</p>
                 <ul className="font-normal ">
                   <li>• Develop software solutions for local clients.</li>
@@ -196,10 +196,10 @@ export default function home() {
               </div>
 
               <div className="m-1">
-                <p className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
                   Graduate Developer – Technical Services
                   <p className="font-normal ">Acton Fiji - 11/2019 - 05/2020</p>
-                </p>
+                </div>
                 <p className="font-normal ">
                   30 Desvoux Road, Suva, Fiji Islands
                 </p>
@@ -213,12 +213,12 @@ export default function home() {
               </div>
 
               <div className="m-1">
-                <p className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
                   IT Intern
                   <p className="font-normal ">
                     IT Department- 06/2016 - 02/2018
                   </p>
-                </p>
+                </div>
                 <p className="font-normal ">
                   The University of the South Pacific, Laucala Bay, Fiji Islands
                 </p>
@@ -244,24 +244,28 @@ export default function home() {
               <p className="py-2 my-1 text-4xl font-normal border-b border-white">
                 Technologies 👨‍💻
               </p>
-              <div className="container">
-                <div className="flex items-center my-2">
+
+              <div className="">
+                <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                  Programming Languages
+                </div>
+                <div className="flex flex-wrap items-center my-2">
                   <p>Android Java</p>
                   <i className="dev-icon devicon-android-plain colored"></i>
                 </div>
-                <div className="flex items-center my-2">
+                <div className="flex flex-wrap items-center my-2">
                   <p>ASP.NET, Entity Framework, Web API 2, LINQ</p>
                   <i className="dev-icon devicon-dot-net-plain-wordmark colored"></i>
                 </div>
-                <div className="flex items-center my-2">
+                <div className="flex flex-wrap items-center my-2">
                   <p>C#</p>
                   <i className="dev-icon devicon-csharp-plain-wordmark colored"></i>
                 </div>
-                <div className="flex items-center my-2">
+                <div className="flex flex-wrap items-center my-2">
                   <p>Java</p>
                   <i className="dev-icon devicon-java-plain colored"></i>
                 </div>
-                <div className="flex items-center my-2">
+                <div className="flex flex-wrap items-center my-2">
                   <p>JavaScript</p>
                   <i className="dev-icon devicon-javascript-plain colored"></i>
                   <p>TypeScript</p>
@@ -271,7 +275,10 @@ export default function home() {
                   <p>NodeJS</p>
                   <i className="dev-icon devicon-nodejs-plain-wordmark colored"></i>
                 </div>
-                <div className="flex items-center my-2">
+                <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                  Frameworks
+                </div>
+                <div className="flex flex-wrap items-center my-2">
                   <p>Vue</p>
                   <i className="dev-icon devicon-vuejs-plain-wordmark colored"></i>
                   <p>React</p>
@@ -281,7 +288,7 @@ export default function home() {
                   <p>NestJS</p>
                   <i className="dev-icon devicon-nestjs-plain-wordmark colored"></i>
                 </div>
-                <div className="flex items-center my-2">
+                <div className="flex flex-wrap items-center my-2">
                   <p>HTML</p>
                   <i className="dev-icon devicon-html5-plain-wordmark colored"></i>
                   <p>CSS</p>
@@ -291,7 +298,10 @@ export default function home() {
                   <p>Tailwind CSS</p>
                   <i className="dev-icon devicon-tailwindcss-original-wordmark colored"></i>
                 </div>
-                <div className="flex items-center my-2">
+                <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                  Database
+                </div>
+                <div className="flex flex-wrap items-center my-2">
                   <p>MySQL</p>
                   <i className="dev-icon devicon-mysql-plain-wordmark colored"></i>
                   <p>Oracle</p>
@@ -299,13 +309,19 @@ export default function home() {
                   <p>MongoDB</p>
                   <i className="dev-icon devicon-mongodb-plain-wordmark colored"></i>
                 </div>
-                <div className="flex items-center my-2">
+                <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                  Source Control
+                </div>
+                <div className="flex flex-wrap items-center my-2">
                   <p>Git</p>
                   <i className="dev-icon devicon-git-plain-wordmark colored"></i>
                   <p>GitHub</p>
                   <i className="dev-icon devicon-github-original-wordmark"></i>
                 </div>
-                <div className="flex items-center my-2">
+                <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                  UX/UI
+                </div>
+                <div className="flex flex-wrap items-center my-2">
                   <p>Figma</p>
                   <i className="dev-icon devicon-figma-plain colored"></i>
                 </div>
