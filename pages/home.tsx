@@ -1,9 +1,23 @@
-import React, { useEffect } from "react";
+import React, { useRef } from "react";
 import { MdEmail } from "react-icons/md";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Typewriter from "typewriter-effect";
+import { MutableRefObject } from "react";
 
 export default function Home() {
+  const aboutSection: MutableRefObject<HTMLDivElement | null> = useRef(null);
+  const educationSection: MutableRefObject<HTMLDivElement | null> =
+    useRef(null);
+  const experienceSection: MutableRefObject<HTMLDivElement | null> =
+    useRef(null);
+  const technologiesSection: MutableRefObject<HTMLDivElement | null> =
+    useRef(null);
+
+  function scrollToSection(
+    sectionRef: MutableRefObject<HTMLDivElement | null>
+  ) {
+    sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <main className="flex items-end w-screen h-screen lg:flex-col">
       <div className="relative flex w-full h-full ">
@@ -15,12 +29,38 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col m-auto">
-            <h1 className="navigation-item ">
+            <h1
+              className="navigation-item "
+              onClick={() => {
+                scrollToSection(aboutSection);
+              }}
+            >
               About <span className="text-white">me</span>
             </h1>
-            <h1 className="navigation-item">Education</h1>
-            <h1 className="navigation-item">Experience</h1>
-            <h1 className="navigation-item">Technologies</h1>
+            <h1
+              className="navigation-item"
+              onClick={() => {
+                scrollToSection(educationSection);
+              }}
+            >
+              Education
+            </h1>
+            <h1
+              className="navigation-item"
+              onClick={() => {
+                scrollToSection(experienceSection);
+              }}
+            >
+              Experience
+            </h1>
+            <h1
+              className="navigation-item"
+              onClick={() => {
+                scrollToSection(technologiesSection);
+              }}
+            >
+              Technologies
+            </h1>
           </div>
           <div className="flex p-4 ml-auto text-4xl">
             <a className="mx-2 " href="mailto:mohammed.muqtadir.ahad@gmail.com">
@@ -44,6 +84,10 @@ export default function Home() {
         <section className="ml-auto overflow-scroll bg-black no-scrollbar lg:h-full lg:w-1/2">
           {/* content */}
           <div
+            ref={aboutSection}
+            onScroll={() => {
+              scrollToSection(educationSection);
+            }}
             id="About"
             className="flex items-center w-full h-full max-h-screen m-auto background-circles"
           >
@@ -104,6 +148,7 @@ export default function Home() {
             </div>
           </div>
           <div
+            ref={educationSection}
             id="Education"
             className="flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-contour"
           >
@@ -171,6 +216,7 @@ export default function Home() {
           </div>
 
           <div
+            ref={experienceSection}
             id="Experience"
             className="flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-sprinkle"
           >
@@ -255,6 +301,7 @@ export default function Home() {
           </div>
 
           <div
+            ref={technologiesSection}
             id="Technologies"
             className="flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-meteor"
           >
