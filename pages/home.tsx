@@ -294,17 +294,7 @@ export default function Home() {
                   <i className="dev-icon devicon-nodejs-plain-wordmark colored"></i>
                 </div>
                 <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
-                  Frameworks
-                </div>
-                <div className="flex flex-wrap items-center my-2">
-                  <p>Vue</p>
-                  <i className="dev-icon devicon-vuejs-plain-wordmark colored"></i>
-                  <p>React</p>
-                  <i className="dev-icon devicon-react-original colored"></i>
-                  <p>NextJS</p>
-                  <i className="dev-icon devicon-nextjs-original-wordmark"></i>
-                  <p>NestJS</p>
-                  <i className="dev-icon devicon-nestjs-plain-wordmark colored"></i>
+                  Frontend and Styling
                 </div>
                 <div className="flex flex-wrap items-center my-2">
                   <p>HTML</p>
@@ -317,7 +307,21 @@ export default function Home() {
                   <i className="dev-icon devicon-tailwindcss-original-wordmark colored"></i>
                 </div>
                 <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
-                  Database
+                  Frameworks - Backend and Frontend
+                </div>
+                <div className="flex flex-wrap items-center my-2">
+                  <p>Vue</p>
+                  <i className="dev-icon devicon-vuejs-plain-wordmark colored"></i>
+                  <p>React</p>
+                  <i className="dev-icon devicon-react-original colored"></i>
+                  <p>NextJS</p>
+                  <i className="dev-icon devicon-nextjs-original-wordmark"></i>
+                  <p>NestJS</p>
+                  <i className="dev-icon devicon-nestjs-plain-wordmark colored"></i>
+                </div>
+
+                <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                  Databases
                 </div>
                 <div className="flex flex-wrap items-center my-2">
                   <p>MySQL</p>
@@ -328,16 +332,18 @@ export default function Home() {
                   <i className="dev-icon devicon-mongodb-plain-wordmark colored"></i>
                 </div>
                 <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
-                  Source Control
+                  Source Control Services
                 </div>
                 <div className="flex flex-wrap items-center my-2">
                   <p>Git</p>
                   <i className="dev-icon devicon-git-plain-wordmark colored"></i>
                   <p>GitHub</p>
                   <i className="dev-icon devicon-github-original-wordmark"></i>
+                  <p>Bitbucket</p>
+                  <i className="dev-icon devicon-bitbucket-original-wordmark colored"></i>
                 </div>
                 <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
-                  UX/UI
+                  UX/UI Designing
                 </div>
                 <div className="flex flex-wrap items-center my-2">
                   <p>Figma</p>
