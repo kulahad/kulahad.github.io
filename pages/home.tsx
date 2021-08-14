@@ -172,15 +172,13 @@ export default function home() {
                 <p className="font-normal ">
                   Fiji National University, Nasinu, Suva, Fiji Islands
                 </p>
-                <p className="font-normal ">
-                  <ul>
-                    <li>
-                      • Develop educational and custom applications to assist
-                      students and staff.
-                    </li>
-                    <li>• Graphic design, Video editing</li>
-                  </ul>
-                </p>
+                <ul className="font-normal ">
+                  <li>
+                    • Develop educational and custom applications to assist
+                    students and staff.
+                  </li>
+                  <li>• Graphic design, Video editing</li>
+                </ul>
               </div>
 
               <div className="m-1">
@@ -191,12 +189,10 @@ export default function home() {
                   </p>
                 </p>
                 <p className="font-normal ">Sports City, Suva, Fiji Islands</p>
-                <p className="font-normal ">
-                  <ul>
-                    <li>• Develop software solutions for local clients.</li>
-                    <li>• Requirements engineering and analysis.</li>
-                  </ul>
-                </p>
+                <ul className="font-normal ">
+                  <li>• Develop software solutions for local clients.</li>
+                  <li>• Requirements engineering and analysis.</li>
+                </ul>
               </div>
 
               <div className="m-1">
@@ -207,15 +203,13 @@ export default function home() {
                 <p className="font-normal ">
                   30 Desvoux Road, Suva, Fiji Islands
                 </p>
-                <p className="font-normal ">
-                  <ul>
-                    <li>
-                      • Out sourced work for Akari Software, Ireland. Full-stack
-                      development.
-                    </li>
-                    <li>• Representing the team in meetings.</li>
-                  </ul>
-                </p>
+                <ul className="font-normal ">
+                  <li>
+                    • Out sourced work for Akari Software, Ireland. Full-stack
+                    development.
+                  </li>
+                  <li>• Representing the team in meetings.</li>
+                </ul>
               </div>
 
               <div className="m-1">
@@ -228,18 +222,16 @@ export default function home() {
                 <p className="font-normal ">
                   The University of the South Pacific, Laucala Bay, Fiji Islands
                 </p>
-                <p className="font-normal ">
-                  <ul>
-                    <li>
-                      • Configuration of Software and firmware on new students’
-                      PCs, Lab monitoring and care.
-                    </li>
-                    <li>
-                      • Logging requests to various technicians, Closing Labs
-                      after hours
-                    </li>
-                  </ul>
-                </p>
+                <ul className="font-normal ">
+                  <li>
+                    • Configuration of Software and firmware on new students’
+                    PCs, Lab monitoring and care.
+                  </li>
+                  <li>
+                    • Logging requests to various technicians, Closing Labs
+                    after hours
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -252,7 +244,7 @@ export default function home() {
               <p className="py-2 my-1 text-4xl font-normal border-b border-white">
                 Technologies 👨‍💻
               </p>
-              <div>
+              <div className="container">
                 <div className="flex items-center my-2">
                   <p>Android Java</p>
                   <i className="dev-icon devicon-android-plain colored"></i>
