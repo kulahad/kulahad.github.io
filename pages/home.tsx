@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MdEmail } from "react-icons/md";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Typewriter from "typewriter-effect";
 
-export default function home() {
+export default function Home() {
   return (
     <main className="flex items-end w-screen h-screen lg:flex-col">
       <div className="relative flex w-full h-full ">
@@ -21,9 +21,6 @@ export default function home() {
             <h1 className="navigation-item">Education</h1>
             <h1 className="navigation-item">Experience</h1>
             <h1 className="navigation-item">Technologies</h1>
-            <h1 className="navigation-item">
-              Contact <span className="text-white">me</span>
-            </h1>
           </div>
           <div className="flex p-4 ml-auto text-4xl">
             <a className="mx-2 " href="mailto:mohammed.muqtadir.ahad@gmail.com">
@@ -82,6 +79,27 @@ export default function home() {
                 >
                   Download Resume
                 </a>
+              </div>
+              <p className="my-1 lg:hidden">Get in touch with me.</p>
+              <div className="flex text-4xl lg:hidden">
+                <a
+                  className="mr-2 "
+                  href="mailto:mohammed.muqtadir.ahad@gmail.com"
+                >
+                  <MdEmail className="hover:text-red-400" />
+                </a>
+                <a className="mx-2" href="https://github.com/kulahad">
+                  <AiFillGithub className="hover:text-gray-700" />
+                </a>
+                <a
+                  className="mx-2"
+                  href="https://www.linkedin.com/in/muqtadir-ahad/"
+                >
+                  <AiFillLinkedin className="hover:text-blue-500" />
+                </a>
+                {/* <a className="m-1">
+            <MdEmail />
+          </a> */}
               </div>
             </div>
           </div>
@@ -154,7 +172,7 @@ export default function home() {
 
           <div
             id="Experience"
-            className="flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-contour"
+            className="flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-sprinkle"
           >
             <div className="flex flex-col p-10 mx-4 text-white rounded-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
               <p className="py-2 my-1 text-4xl font-normal border-b border-white">
@@ -238,7 +256,7 @@ export default function home() {
 
           <div
             id="Technologies"
-            className="flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-contour"
+            className="flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-meteor"
           >
             <div className="flex flex-col p-10 mx-4 text-white rounded-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
               <p className="py-2 my-1 text-4xl font-normal border-b border-white">
