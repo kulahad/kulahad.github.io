@@ -5,7 +5,6 @@ import Document, {
   NextScript,
   DocumentContext,
 } from "next/document";
-import Script from "next/script";
 
 class AppDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -14,6 +13,11 @@ class AppDocument extends Document {
   }
 
   render() {
+    const gtagCode = `{  window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-258YQEEJME');}`;
     return (
       <Html>
         <Head>
@@ -27,26 +31,18 @@ class AppDocument extends Document {
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
           />
 
-          <Script
+          <script
+            async
             src="https://kit.fontawesome.com/dba5f5b919.js"
             crossOrigin="anonymous"
-          ></Script>
-          <Script
+          ></script>
+
+          {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+          <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-258YQEEJME"
-          ></Script>
-          {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-          <Script
-            dangerouslySetInnerHTML={{
-              __html: `
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-258YQEEJME');
-`,
-            }}
-          />
+          ></script>
+          <script dangerouslySetInnerHTML={{ __html: gtagCode }} />
         </Head>
         <body>
           <Main />
