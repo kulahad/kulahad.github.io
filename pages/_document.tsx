@@ -31,6 +31,22 @@ class AppDocument extends Document {
             src="https://kit.fontawesome.com/dba5f5b919.js"
             crossOrigin="anonymous"
           ></Script>
+          <Script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-258YQEEJME"
+          ></Script>
+          {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+          <Script
+            dangerouslySetInnerHTML={{
+              __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-258YQEEJME');
+`,
+            }}
+          />
         </Head>
         <body>
           <Main />
