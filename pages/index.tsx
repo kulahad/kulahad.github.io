@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, MutableRefObject } from "react";
 import { MdEmail } from "react-icons/md";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Typewriter from "typewriter-effect";
-import { MutableRefObject } from "react";
+import Head from "next/head";
 
 export default function Home() {
   const aboutSection: MutableRefObject<HTMLDivElement | null> = useRef(null);
@@ -20,6 +20,9 @@ export default function Home() {
   }
   return (
     <main className="flex items-end w-screen h-screen lg:flex-col">
+      <Head>
+        <title>{`Ahad's Portfolio`}</title>
+      </Head>
       <div className="relative flex w-full h-full ">
         <section className="absolute z-50 flex-col hidden bg-white lg:flex lg:w-1/2 lg:h-full font-secondary">
           <div className="m-4 ">
