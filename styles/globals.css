@@ -20,7 +20,7 @@ a {
 }
 
 .navigation-item {
-  @apply p-2 my-2 font-bold text-black text-8xl hover:bg-black hover:text-red-600;
+  @apply p-2 my-2 font-bold text-black md:text-4xl text-8xl hover:bg-black hover:text-red-600;
 }
 
 .background-circles {
