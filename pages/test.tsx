@@ -8,7 +8,7 @@ export default function Home({ quote }: { quote: Api.QuoteResponse }) {
   return (
     <main className="flex flex-col w-screen h-screen bg-black ">
       <Image
-        src="/background.jpg"
+        src="/images/background.jpg"
         layout="fill"
         quality="60"
         objectFit="cover"
