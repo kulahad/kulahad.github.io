@@ -1,4 +1,4 @@
-import React, { useRef, MutableRefObject } from "react";
+import React, { useRef, MutableRefObject, useEffect, useState } from "react";
 import { MdEmail } from "react-icons/md";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Typewriter from "typewriter-effect";
@@ -19,7 +19,7 @@ export default function Home() {
     sectionRef.current?.scrollIntoView({ behavior: "smooth" });
   }
   return (
-    <main className="flex items-end w-screen h-screen lg:flex-col">
+    <main className="flex items-end h-screen lg:flex-col">
       <Head>
         <title>{`Ahad's Portfolio`}</title>
       </Head>
@@ -245,7 +245,7 @@ export default function Home() {
                   Open Educational Resources Technologist
                   <p className="font-normal ">
                     Centre for Learning & Teaching Enhancement - 09/2020 -
-                    Current
+                    12/2021
                   </p>
                 </div>
                 <p className="font-normal ">
