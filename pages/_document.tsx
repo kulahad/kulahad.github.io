@@ -43,6 +43,11 @@ class AppDocument extends Document {
             src="https://www.googletagmanager.com/gtag/js?id=G-258YQEEJME"
           ></script>
           <script dangerouslySetInnerHTML={{ __html: gtagCode }} />
+          <script
+            async
+            crossOrigin="anonymous"
+            src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
+          ></script>
         </Head>
         <body>
           <Main />
