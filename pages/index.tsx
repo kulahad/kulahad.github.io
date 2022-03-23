@@ -70,15 +70,15 @@ export default function Home() {
             </h1>
           </div>
           <div className="flex items-center justify-between w-full ">
-            <div className="mx-4 text-gray-700 text-normal">
+            <div className="mx-4 text-gray-700 text-sm">
               Made with NextJS and Tailwind CSS by Kulahad❤️❤️❤️
             </div>
-            <div className="flex p-4 text-4xl">
+            <div className="flex p-2 text-3xl">
               <a
                 className="mx-2 "
                 href="mailto:mohammed.muqtadir.ahad@gmail.com"
               >
-                <MdEmail className="hover:text-red-400" />
+                <MdEmail className="hover:text-red-600" />
               </a>
               <a className="mx-2" href="https://github.com/kulahad">
                 <AiFillGithub className="hover:text-gray-700" />
