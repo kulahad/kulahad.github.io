@@ -2,18 +2,37 @@ import Head from "next/head";
 import Image from "next/image";
 import { MdEmail } from "react-icons/md";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import NET from "vanta/dist/vanta.net.min";
 import Typewriter from "typewriter-effect";
+import { useEffect, useRef, useState } from "react";
 
 export default function Home({ quote }: { quote: Api.QuoteResponse }) {
+  const [vantaEffect, setVantaEffect] = useState(0);
+  const myRef = useRef(null);
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        NET({
+          el: myRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0xff3f3f,
+          backgroundColor: 0x0,
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
+
   return (
-    <main className="flex flex-col w-screen h-screen bg-black ">
-      <Image
-        src="/images/background.jpg"
-        layout="fill"
-        quality="60"
-        objectFit="cover"
-        alt="Keyboard"
-      />
+    <main className="flex flex-col w-screen h-screen bg-black " ref={myRef}>
       <div className="sticky z-50 bg-black border-b border-white bg-opacity-60">
         <nav className="container flex items-center justify-between w-screen h-12 mx-auto text-white ">
           <div className="mx-4">
@@ -39,21 +58,12 @@ export default function Home({ quote }: { quote: Api.QuoteResponse }) {
           </div>
         </nav>
       </div>
-      <section className="container z-0 flex items-center mx-auto text-white">
-        {quote && (
-          <p className="my-2 text-lg font-thin leading-6 ">
-            {`"${quote.contents.quotes[0].quote}" - `}
-            <span className="italic font-bold ">
-              {quote.contents.quotes[0].author}
-            </span>
-          </p>
-        )}
-      </section>
+      <section className="container z-0 flex items-center mx-auto text-white"></section>
       <section className="container flex items-center w-full h-full mx-auto bg-background-pattern">
         <div className="flex flex-col p-10 mx-4 text-white rounded-sm lg:w-1/3 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
           <h1 className="text-3xl font-normal ">
             Software{" "}
-            <span className="inline-block text-blue-500">
+            <span className="inline-block text-red-500">
               <Typewriter
                 options={{
                   strings: [
