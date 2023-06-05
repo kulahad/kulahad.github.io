@@ -165,7 +165,7 @@ export default function Home() {
           <div
             ref={educationSection}
             id="Education"
-            className="flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-contour"
+            className="flex justify-center w-full py-10 text-base m-auto lg:items-center lg:h-full background-contour"
           >
             <div className="flex flex-col p-10 mx-4 text-white rounded-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
               <p className="py-2 my-2 text-4xl font-normal border-b border-white">
@@ -244,7 +244,7 @@ export default function Home() {
                 <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
                   Associate Technical Developer - 01/2022 - Current
                 </div>
-                <p className="font-normal ">
+                <p className="font-extralight text-sm">
                   DXC Technology, Suva, Fiji Islands
                 </p>
                 <ul className="font-normal ">
@@ -253,7 +253,7 @@ export default function Home() {
                     features to D365FO customers.
                   </li>
                   <li>• AX2012 to D365FO Upgrade projects.</li>
-                  <li>• Build PowerApps and custom web API's with C#.</li>
+                  <li>• Build PowerApps and custom web API&apos;s with C#.</li>
                 </ul>
               </div>
 
