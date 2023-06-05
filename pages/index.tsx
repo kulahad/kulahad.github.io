@@ -23,8 +23,8 @@ export default function Home() {
       <Head>
         <title>{`Ahad's Portfolio`}</title>
       </Head>
-      <div className="relative flex w-full h-full ">
-        <section className="absolute z-50 flex-col hidden bg-white lg:flex lg:w-1/2 lg:h-full font-secondary">
+      <div className="relative flex w-full h-full">
+        <section className="absolute z-50 flex-col hidden bg-white lg:flex lg:w-1/2 lg:text-lg  lg:h-full font-secondary">
           <div className="m-4 ">
             <p className="inline p-2 text-lg font-semibold text-white bg-black hover:bg-white hover:text-red-600">
               Mohammed Ahad
@@ -176,7 +176,7 @@ export default function Home() {
                 <p className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
                   Bachelor of Software Engineering: 2016 – 2019
                 </p>
-                <p className="font-normal ">
+                <p className="font-extralight text-sm">
                   The University of the South Pacific, Laucala Bay, Fiji Islands
                 </p>
                 <p className="font-normal ">GPA – 3.54 </p>
@@ -187,7 +187,7 @@ export default function Home() {
                   Secondary School: 2011 - 2015 Pundit Vishnu Deo Memorial
                   College
                 </p>
-                <p className="font-normal ">
+                <p className="font-extralight text-sm ">
                   Saweni, Lautoka City, Fiji Islands
                 </p>
                 <p className="font-normal ">
@@ -199,7 +199,7 @@ export default function Home() {
                 <p className="py-2 my-2 text-xl font-normal border-b border-red-300">
                   Primary School: 2002 - 2010 Gurukul Primary School
                 </p>
-                <p className="font-normal ">
+                <p className="font-extralight text-sm ita">
                   Saweni, Lautoka City, Fiji Islands
                 </p>
               </div>
@@ -242,14 +242,28 @@ export default function Home() {
 
               <div className="m-1">
                 <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
-                  Open Educational Resources Technologist
-                  <p className="font-normal ">
-                    Centre for Learning & Teaching Enhancement - 09/2020 -
-                    12/2021
-                  </p>
+                  Associate Technical Developer - 01/2022 - Current
                 </div>
                 <p className="font-normal ">
-                  Fiji National University, Nasinu, Suva, Fiji Islands
+                  DXC Technology, Suva, Fiji Islands
+                </p>
+                <ul className="font-normal ">
+                  <li>
+                    • Work with functional consultants to build and ship
+                    features to D365FO customers.
+                  </li>
+                  <li>• AX2012 to D365FO Upgrade projects.</li>
+                  <li>• Build PowerApps and custom web API's with C#.</li>
+                </ul>
+              </div>
+
+              <div className="m-1">
+                <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
+                  Open Educational Resources Technologist- 09/2020 - 12/2021
+                </div>
+                <p className="font-extralight text-sm">
+                  Centre for Learning & Teaching Enhancement - Fiji National
+                  University, Nasinu, Suva, Fiji Islands
                 </p>
                 <ul className="font-normal ">
                   <li>
@@ -262,12 +276,12 @@ export default function Home() {
 
               <div className="m-1">
                 <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
-                  Developer – Technical Department
-                  <p className="font-normal ">
-                    QIT Pacific - 06/2020 - 09/2020
-                  </p>
+                  Developer - 06/2020 - 09/2020
                 </div>
-                <p className="font-normal ">Sports City, Suva, Fiji Islands</p>
+                <p className="font-extralight text-sm">
+                  Technical Department - QIT Pacific, Sports City, Suva, Fiji
+                  Islands
+                </p>
                 <ul className="font-normal ">
                   <li>• Develop software solutions for local clients.</li>
                   <li>• Requirements engineering and analysis.</li>
@@ -276,11 +290,10 @@ export default function Home() {
 
               <div className="m-1">
                 <div className="py-2 my-2 text-xl font-normal border-b border-red-300 ">
-                  Graduate Developer – Technical Services
-                  <p className="font-normal ">Acton Fiji - 11/2019 - 05/2020</p>
+                  Graduate Developer – 11/2019 - 05/2020
                 </div>
-                <p className="font-normal ">
-                  30 Desvoux Road, Suva, Fiji Islands
+                <p className="font-extralight text-sm">
+                  Acton Fiji - 30 Desvoux Road, Suva, Fiji Islands
                 </p>
                 <ul className="font-normal ">
                   <li>
@@ -298,7 +311,7 @@ export default function Home() {
                     IT Department- 06/2016 - 02/2018
                   </p>
                 </div>
-                <p className="font-normal ">
+                <p className="font-extralight text-sm">
                   The University of the South Pacific, Laucala Bay, Fiji Islands
                 </p>
                 <ul className="font-normal ">
