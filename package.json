@@ -10,11 +10,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.15",
     "logrocket": "^2.2.1",
     "next": "12.1.0",
+    "notion-to-md": "^3.1.1",
     "react": "^17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
+    "react-markdown": "^8.0.6",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^1.0.0",
     "typewriter-effect": "^2.18.0",
     "vanta": "^0.5.21"
   },
