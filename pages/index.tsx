@@ -96,7 +96,7 @@ export default function Home() {
           </div>
           {/* Navigation */}
         </section>
-        <section className="ml-auto overflow-scroll bg-black no-scrollbar lg:h-full lg:w-1/2">
+        <section className="snap-y  ml-auto overflow-scroll bg-black no-scrollbar lg:h-full lg:w-1/2">
           {/* content */}
           <div
             ref={aboutSection}
@@ -104,7 +104,7 @@ export default function Home() {
               scrollToSection(educationSection);
             }}
             id="About"
-            className="flex items-center w-full h-full max-h-screen m-auto background-circles"
+            className="snap-start flex items-center w-full h-full max-h-screen m-auto background-circles"
           >
             <div className="flex flex-col p-10 mx-4 text-white rounded-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
               <h1 className="text-3xl font-normal ">
@@ -165,7 +165,7 @@ export default function Home() {
           <div
             ref={educationSection}
             id="Education"
-            className="flex justify-center w-full py-10 text-base m-auto lg:items-center lg:h-full background-contour"
+            className="snap-start flex justify-center w-full py-10 text-base m-auto lg:items-center lg:h-full background-contour"
           >
             <div className="flex flex-col p-10 mx-4 text-white rounded-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
               <p className="py-2 my-2 text-4xl font-normal border-b border-white">
@@ -233,7 +233,7 @@ export default function Home() {
           <div
             ref={experienceSection}
             id="Experience"
-            className="flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-sprinkle"
+            className="snap-start flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-sprinkle"
           >
             <div className="flex flex-col p-10 mx-4 text-white rounded-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
               <p className="py-2 my-1 text-4xl font-normal border-b border-white">
@@ -331,7 +331,7 @@ export default function Home() {
           <div
             ref={technologiesSection}
             id="Technologies"
-            className="flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-meteor"
+            className="snap-start flex justify-center w-full py-10 m-auto lg:items-center lg:h-full background-meteor"
           >
             <div className="flex flex-col p-10 mx-4 text-white rounded-sm bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
               <p className="py-2 my-1 text-4xl font-normal border-b border-white">
