@@ -27,16 +27,16 @@ function Aboutme() {
             <div className="w-full">
               <h1 className="text-xl font-medium">Intro </h1>
               <p className="font-thin">
-                Hello, I'm Mohammed Muqtadir Ahad, a software engineer born and
-                raised in Lautoka, amidst the stunning landscapes of the Fiji
-                Islands. Growing up in this tropical paradise, I've witnessed
-                firsthand how technology can bridge gaps and create
+                Hello, I&apos;m Mohammed Muqtadir Ahad, a software engineer born
+                and raised in Lautoka, amidst the stunning landscapes of the
+                Fiji Islands. Growing up in this tropical paradise, I&apos;ve
+                witnessed firsthand how technology can bridge gaps and create
                 opportunities, even in remote corners of the world. As a
-                Software engineer, I'm passionate about leveraging my expertise
-                in Microsoft technologies and full-stack development to not only
-                craft innovative solutions for global clients but also to
-                contribute to the booming tech scene in Fiji, where digital
-                transformation is gradually reshaping our island nation.
+                Software engineer, I&apos;m passionate about leveraging my
+                expertise in Microsoft technologies and full-stack development
+                to not only craft innovative solutions for global clients but
+                also to contribute to the booming tech scene in Fiji, where
+                digital transformation is gradually reshaping our island nation.
               </p>
             </div>
 
@@ -71,7 +71,9 @@ function Aboutme() {
           <h1 className="text-xl font-medium pb-2 mb-3 border-b border-red-100">
             Tech & Skills
           </h1>
-          <p className="font-light">Some of the tech that I'm familiar with</p>
+          <p className="font-light">
+            Some of the tech that I&apos;m familiar with
+          </p>
           <Skills />
         </div>
 
