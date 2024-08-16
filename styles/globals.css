@@ -6,8 +6,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -17,10 +15,18 @@ a {
 
 * {
   box-sizing: border-box;
+  scrollbar-color: rgb(255, 255, 255) black;
 }
 
 .navigation-item {
   @apply p-2 my-2 font-bold text-black text-6xl 2xl:text-8xl hover:bg-black hover:text-red-600;
+}
+
+.lobster-regular {
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
 }
 
 .background-circles {
