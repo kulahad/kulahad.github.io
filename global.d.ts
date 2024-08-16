@@ -16,4 +16,15 @@ declare namespace Api {
     success: string;
     contents: Contents;
   }
+
+  interface ExperienceEntry {
+    name: string;
+    period: string;
+    company: string;
+    location: string;
+    current?: boolean;
+    description: string;
+  }
 }
+
+declare module "vanta/dist/vanta.net.min";

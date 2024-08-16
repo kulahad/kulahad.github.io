@@ -5,6 +5,7 @@ import Document, {
   NextScript,
   DocumentContext,
 } from "next/document";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 class AppDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -22,8 +23,10 @@ class AppDocument extends Document {
       <Html>
         <Head>
           <link rel="icon" href="/favicon.ico" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans|Lato&display=optional"
+            href="https://fonts.googleapis.com/css2?family=Whisper&family=Open+Sans&display=swap"
             rel="stylesheet"
           />
           <link
@@ -38,20 +41,11 @@ class AppDocument extends Document {
           ></script>
 
           {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-258YQEEJME"
-          ></script>
-          <script dangerouslySetInnerHTML={{ __html: gtagCode }} />
-          <script
-            async
-            crossOrigin="anonymous"
-            src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
-          ></script>
         </Head>
         <body>
           <Main />
           <NextScript />
+          <GoogleAnalytics gaId="G-258YQEEJME" />
         </body>
       </Html>
     );
