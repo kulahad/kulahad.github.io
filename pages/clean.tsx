@@ -7,7 +7,6 @@ import { InMemoryContentRepository } from "../src/infrustructure/InMemoryContent
 import { NotionContentRepository } from "../src/infrustructure/NotionContentRepository";
 import Markdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
-const remarkGfm = require("remark-gfm");
 
 export default function Home({
   content,
@@ -25,9 +24,7 @@ export default function Home({
     <>
       <h1>{test.title}</h1>
       <div className="w-3/4 mx-auto">
-        <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
-          {test.data}
-        </Markdown>
+        <Markdown rehypePlugins={[rehypeRaw]}>{test.data}</Markdown>
       </div>
 
       <div className="w-full flex flex-col text-justify font-mono text-lg">

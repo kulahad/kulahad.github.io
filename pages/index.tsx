@@ -6,7 +6,7 @@ import Aboutme from "../src/components/Aboutme";
 import Footer from "../src/components/Footer";
 
 export default function NewHome() {
-  const [vantaEffect, setVantaEffect] = useState();
+  const [vantaEffect, setVantaEffect] = useState<any>();
   const myRef = useRef(null);
 
   useEffect(() => {
