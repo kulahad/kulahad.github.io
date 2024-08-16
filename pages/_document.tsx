@@ -5,6 +5,7 @@ import Document, {
   NextScript,
   DocumentContext,
 } from "next/document";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 class AppDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -40,20 +41,11 @@ class AppDocument extends Document {
           ></script>
 
           {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-258YQEEJME"
-          ></script>
-          <script dangerouslySetInnerHTML={{ __html: gtagCode }} />
-          <script
-            async
-            crossOrigin="anonymous"
-            src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
-          ></script>
         </Head>
         <body>
           <Main />
           <NextScript />
+          <GoogleAnalytics gaId="G-258YQEEJME" />
         </body>
       </Html>
     );
