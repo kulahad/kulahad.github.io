@@ -5,10 +5,10 @@ import { SongsId } from "../application/Data";
 function Footer() {
   const song = SongsId[Math.floor(Math.random() * SongsId.length)];
   return (
-    <footer className="mt-auto bg-black max-h-1/4-screen h-screen px-8 text-white bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-50">
-      <div className="mx-auto container grid md:grid-cols-2 grid-cols-1 m-8">
+    <footer className="mt-auto bg-blackpx-8 text-white bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-50">
+      <div className="mx-auto px-5 container grid md:grid-cols-2 grid-cols-1 m-8">
         <div className="m-1 font-light">
-          <p>Say hello</p>
+          <p className="text-lg">Say hello</p>
           <p className="mb-2">Jam to one of my favourites!</p>
           <iframe
             className=" mt-0"

@@ -8,7 +8,7 @@ import TimelineItem from "../src/components/TimelineItem";
 import Aboutme from "../src/components/Aboutme";
 import Footer from "../src/components/Footer";
 
-export default function NewHome({ quote }: { quote: Api.QuoteResponse }) {
+export default function NewHome() {
   const [vantaEffect, setVantaEffect] = useState();
   const myRef = useRef(null);
 
@@ -20,10 +20,10 @@ export default function NewHome({ quote }: { quote: Api.QuoteResponse }) {
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
-          minHeight: 100.0,
+          minHeight: 150.0,
           minWidth: 200.0,
           scale: 1.0,
-          scaleMobile: 1.0,
+          scaleMobile: 2.0,
           color: 0xb91c1c,
           backgroundColor: 0x0,
         })
@@ -81,25 +81,4 @@ export default function NewHome({ quote }: { quote: Api.QuoteResponse }) {
       <Footer />
     </main>
   );
-}
-
-export async function getStaticProps() {
-  try {
-    const quote = await fetch("https://quotes.rest/qod").then((res) => {
-      console.log("🚀 ~ getStaticProps ~ quote:", quote);
-      return res.json();
-    });
-
-    return {
-      props: {
-        quote: quote,
-      },
-    };
-  } catch (error) {
-    return {
-      props: {
-        quote: null,
-      },
-    };
-  }
 }
