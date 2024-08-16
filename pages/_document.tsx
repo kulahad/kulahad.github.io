@@ -40,6 +40,11 @@ class AppDocument extends Document {
             crossOrigin="anonymous"
           ></script>
 
+          <script
+            async
+            crossOrigin="anonymous"
+            src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
+          ></script>
           {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
         </Head>
         <body>
