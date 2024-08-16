@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { AiFillGithub } from "react-icons/ai";
-import { SongsId } from "../application/Data";
+import Typewriter from "typewriter-effect";
+import { Greetings, SongsId } from "../application/Data";
 
 function Footer() {
   const song = SongsId[Math.floor(Math.random() * SongsId.length)];
@@ -8,7 +8,19 @@ function Footer() {
     <footer className="mt-auto bg-blackpx-8 text-white bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-50">
       <div className="mx-auto px-5 container grid md:grid-cols-2 grid-cols-1 m-8">
         <div className="m-1 font-light">
-          <p className="text-lg">Say hello</p>
+          <div className="text-lg font-bold">
+            Say{" "}
+            <span className="inline-block text-red-700 ">
+              <Typewriter
+                options={{
+                  strings: Greetings,
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </span>
+            !
+          </div>
           <p className="mb-2">Jam to one of my favourites!</p>
           <iframe
             className=" mt-0"

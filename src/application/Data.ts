@@ -213,3 +213,21 @@ export const SongsId = [
   "0gV5B7zmJkS1aaH9APokrH",
   "2lD6AoA8qf2t4Dkf2TcmNK",
 ];
+
+export const Greetings = [
+  "Hello", // English
+  "Hola", // Spanish
+  "Bonjour", // French
+  "Hallo", // German
+  "Ciao", // Italian
+  "Olá", // Portuguese
+  "Привет", // Russian
+  "नमस्ते", // Hindi
+  "你好", // Chinese (Mandarin)
+  "こんにちは", // Japanese
+  "안녕하세요", // Korean
+  "Merhaba", // Turkish
+  "Salam", // Arabic
+  "Sawubona", // Zulu
+  "Hej", // Swedish
+];

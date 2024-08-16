@@ -2,9 +2,6 @@ import NET from "vanta/dist/vanta.net.min";
 import Typewriter from "typewriter-effect";
 import { useEffect, useRef, useState } from "react";
 import Navbar from "../src/components/Navbar";
-import Image from "next/image";
-import EducationCard from "../src/components/EducationCard";
-import TimelineItem from "../src/components/TimelineItem";
 import Aboutme from "../src/components/Aboutme";
 import Footer from "../src/components/Footer";
 
