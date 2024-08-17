@@ -20,7 +20,7 @@ export default function NewHome() {
           minHeight: 150.0,
           minWidth: 200.0,
           scale: 1.0,
-          scaleMobile: 2.0,
+          scaleMobile: 1.0,
           color: 0xb91c1c,
           backgroundColor: 0x0,
         })
