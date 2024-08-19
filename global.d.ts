@@ -16,13 +16,36 @@ declare namespace Api {
     success: string;
     contents: Contents;
   }
+}
 
-  interface ExperienceEntry {
+declare namespace Data {
+  export interface SocialLinks {
+    name: string;
+    link: string;
+  }
+  export interface EducationEntry {
+    name: string;
+    period: string;
+    location: string;
+    gpa: number;
+  }
+  export interface ExperienceEntry {
     name: string;
     period: string;
     company: string;
     location: string;
     current?: boolean;
+    description: string;
+  }
+
+  export interface TechnologiesEntry {
+    category: string;
+    technologies: string[];
+  }
+  export interface CertificationsEntry {
+    name: string;
+    issuer: string;
+    issueDate: string;
     description: string;
   }
 }

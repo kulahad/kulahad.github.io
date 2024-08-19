@@ -1,4 +1,4 @@
-export const Experience = [
+export const Experience: Data.ExperienceEntry[] = [
   {
     name: "Associate Technical Consultant - Microsoft Practice",
     period: "January 2022 - Present",
@@ -42,7 +42,7 @@ export const Experience = [
   },
 ];
 
-export const Education = [
+export const Education: Data.EducationEntry[] = [
   {
     name: "Master of Computing Science and Information Systems",
     period: "2020 - 2024",
@@ -57,7 +57,7 @@ export const Education = [
   },
 ];
 
-export const Technologies = [
+export const Technologies: Data.TechnologiesEntry[] = [
   {
     category: "Backend",
     technologies: [
@@ -104,7 +104,7 @@ export const Technologies = [
   },
 ];
 
-export const Certifications = [
+export const Certifications: Data.CertificationsEntry[] = [
   {
     name: "Microsoft Certified: Dynamics 365: Finance and Operations Apps Developer Associate",
     issuer: "Microsoft",
@@ -148,7 +148,7 @@ export const Certifications = [
   },
 ];
 
-export const SoftSkills = [
+export const SoftSkills: string[] = [
   "Project Management: Agile, Scrum, Waterfall",
   "API Design and Development",
   "Collaboration and Teamwork",
@@ -160,7 +160,22 @@ export const SoftSkills = [
   "Strong Communication Skills (Oral and Written)",
 ];
 
-export const SongsId = [
+export const SocialLinks: Data.SocialLinks[] = [
+  {
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/muqtadir-ahad/",
+  },
+  {
+    name: "Email",
+    link: "mailto:mohammed.muqtadir.ahad@gmail.com",
+  },
+  {
+    name: "Github",
+    link: "https://github.com/kulahad",
+  },
+];
+
+export const SongsId: string[] = [
   "6AI3ezQ4o3HUoP6Dhudph3",
   "2tudvzsrR56uom6smgOcSf",
   "3GCdLUSnKSMJhs4Tj6CV3s",
@@ -214,7 +229,7 @@ export const SongsId = [
   "2lD6AoA8qf2t4Dkf2TcmNK",
 ];
 
-export const Greetings = [
+export const Greetings: string[] = [
   "Hello", // English
   "Hola", // Spanish
   "Bonjour", // French

@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
+import { SocialLinks } from "../application/Data";
 
 function Navbar() {
   return (
@@ -17,7 +18,7 @@ function Navbar() {
           <a
             className="mx-2 "
             target="_blank"
-            href="mailto:mohammed.muqtadir.ahad@gmail.com"
+            href={SocialLinks.find((x) => x.name === "Email")?.link}
           >
             <MdEmail className="text-2xl hover:text-red-400" />
           </a>
@@ -25,7 +26,7 @@ function Navbar() {
             className="mx-2"
             rel="noopener"
             target="_blank"
-            href="https://github.com/kulahad"
+            href={SocialLinks.find((x) => x.name === "Github")?.link}
           >
             <AiFillGithub className="text-2xl hover:text-gray-700" />
           </a>
@@ -33,7 +34,7 @@ function Navbar() {
             className="mx-2"
             rel="noopener"
             target="_blank"
-            href="https://www.linkedin.com/in/muqtadir-ahad/"
+            href={SocialLinks.find((x) => x.name === "Linkedin")?.link}
           >
             <AiFillLinkedin className="text-2xl hover:text-blue-500" />
           </a>

@@ -5,8 +5,8 @@ import { Greetings, SongsId } from "../application/Data";
 function Footer() {
   const song = SongsId[Math.floor(Math.random() * SongsId.length)];
   return (
-    <footer className="mt-auto bg-blackpx-8 text-white bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-50">
-      <div className="mx-auto px-5 container grid md:grid-cols-2 grid-cols-1 m-8">
+    <footer className="mt-auto bg-black px-8 text-white bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-50">
+      <div className="mx-auto px-6 container grid md:grid-cols-2 grid-cols-1 m-8">
         <div className="m-1 font-light">
           <div className="text-lg font-bold">
             Say{" "}
@@ -32,7 +32,7 @@ function Footer() {
           ></iframe>
           <p>Dont like this song? Refresh the page to get a new one.</p>
         </div>
-        <div className="flex flex-col font-light text-lg">
+        <div className="flex flex-col justify-evenly font-light text-lg">
           <div className="m-1 hover:animate-bounce">Email me</div>
           <div className="m-1 hover:animate-bounce">Checkout my Projects</div>
           <div className="m-1 hover:animate-bounce">Message me on Linkedin</div>
@@ -40,6 +40,14 @@ function Footer() {
             Like my portfolio? - Leave a star on my github page
           </div>
         </div>
+      </div>
+      <div className="flex flex-col items-center justify-center border-t border-slate-100 h-20">
+        <p className="mx-2 text-normal font-thin">
+          Made with ❤, NextJs and Tailwind CSS
+        </p>
+        <p className="mx-2 font-extralight text-sm">
+          Copyright &copy; {new Date().getFullYear()}, Mohammed Muqtadir Ahad.
+        </p>
       </div>
     </footer>
   );
