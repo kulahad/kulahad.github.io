@@ -13,6 +13,18 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mohammed Ahad's Portfolio</title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Portfolio of Mohammed Muqtadir Ahad."
+        />
+        <meta property="og:title" content="Mohammed Ahad's Portfolio" />
+        <meta
+          property="og:description"
+          content="Portfolio of Mohammed Muqtadir Ahad."
+        />
+        <meta property="og:image" content="/images/framedpfp.png" />
       </Head>
       <Component {...pageProps} />
     </>
