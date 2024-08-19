@@ -35,7 +35,7 @@ function Hero() {
             className="p-2  font-light border border-white rounded-sm hover:bg-red-700 hover:border-black hover:text-black"
             rel="noopener"
             target="_blank"
-            href={SocialLinks.find((x) => x.name === "Linkedin")?.link}
+            href={SocialLinks.find((x) => x.name === "LinkedIn")?.link}
           >
             Connect with me!
           </a>

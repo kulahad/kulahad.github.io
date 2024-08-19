@@ -17,6 +17,7 @@ function Navbar() {
         <div className="flex mx-4">
           <a
             className="mx-2 "
+            title="Email link"
             target="_blank"
             href={SocialLinks.find((x) => x.name === "Email")?.link}
           >
@@ -24,6 +25,7 @@ function Navbar() {
           </a>
           <a
             className="mx-2"
+            title="Github link"
             rel="noopener"
             target="_blank"
             href={SocialLinks.find((x) => x.name === "Github")?.link}
@@ -32,9 +34,10 @@ function Navbar() {
           </a>
           <a
             className="mx-2"
+            title="LinkedIn link"
             rel="noopener"
             target="_blank"
-            href={SocialLinks.find((x) => x.name === "Linkedin")?.link}
+            href={SocialLinks.find((x) => x.name === "LinkedIn")?.link}
           >
             <AiFillLinkedin className="text-2xl hover:text-blue-500" />
           </a>

@@ -162,7 +162,7 @@ export const SoftSkills: string[] = [
 
 export const SocialLinks: Data.SocialLinks[] = [
   {
-    name: "Linkedin",
+    name: "LinkedIn",
     link: "https://www.linkedin.com/in/muqtadir-ahad/",
   },
   {
