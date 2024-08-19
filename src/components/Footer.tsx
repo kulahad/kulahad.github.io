@@ -23,9 +23,8 @@ function Footer() {
           </div>
           <p className="mb-2">Jam to one of my favourites!</p>
           <iframe
-            className=" mt-0"
+            className="mt-0 md:w-3/4 w-full "
             src={`https://open.spotify.com/embed/track/${song}?utm_source=generator`}
-            width="75%"
             height="100"
             allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
