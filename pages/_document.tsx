@@ -6,6 +6,7 @@ import Document, {
   DocumentContext,
 } from "next/document";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 
 class AppDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -22,29 +23,17 @@ class AppDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Whisper&family=Open+Sans&display=swap"
             rel="stylesheet"
           />
-          <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
-          />
 
-          <script
-            async
-            src="https://kit.fontawesome.com/dba5f5b919.js"
-            crossOrigin="anonymous"
-          ></script>
-
-          <script
-            async
-            crossOrigin="anonymous"
+          <Script
+            strategy="beforeInteractive"
             src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
-          ></script>
+          />
           {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
         </Head>
         <body>

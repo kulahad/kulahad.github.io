@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
+import { SocialLinks } from "../application/Data";
 
 function Navbar() {
   return (
@@ -16,24 +17,27 @@ function Navbar() {
         <div className="flex mx-4">
           <a
             className="mx-2 "
+            title="Email link"
             target="_blank"
-            href="mailto:mohammed.muqtadir.ahad@gmail.com"
+            href={SocialLinks.find((x) => x.name === "Email")?.link}
           >
             <MdEmail className="text-2xl hover:text-red-400" />
           </a>
           <a
             className="mx-2"
+            title="Github link"
             rel="noopener"
             target="_blank"
-            href="https://github.com/kulahad"
+            href={SocialLinks.find((x) => x.name === "Github")?.link}
           >
             <AiFillGithub className="text-2xl hover:text-gray-700" />
           </a>
           <a
             className="mx-2"
+            title="LinkedIn link"
             rel="noopener"
             target="_blank"
-            href="https://www.linkedin.com/in/muqtadir-ahad/"
+            href={SocialLinks.find((x) => x.name === "LinkedIn")?.link}
           >
             <AiFillLinkedin className="text-2xl hover:text-blue-500" />
           </a>

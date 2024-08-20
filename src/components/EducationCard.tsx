@@ -36,8 +36,10 @@ function EducationCard({
         </p>
       </div>
 
-      <div className=" absolute bg-red-700 rounded-tr-md h-6 top-0 right-0 text-white ">
-        <p className="m-auto font-semibold px-1 text-center">GPA: {gpa}</p>
+      <div className=" font-light text-sm absolute bg-red-700 rounded-tr-md md:h-6 h-5 top-0 right-0 text-white ">
+        <p className="m-auto font-light md:font-semibold px-1 text-center">
+          GPA: {gpa}
+        </p>
       </div>
     </div>
   );
