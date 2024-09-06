@@ -1,5 +1,6 @@
 import Typewriter from "typewriter-effect";
 import { SocialLinks } from "../application/Data";
+import { motion, spring } from "framer-motion";
 
 function Hero() {
   return (
@@ -30,7 +31,11 @@ function Hero() {
           from Microsoft D365 customizations to product development — I&apos;m
           always eager to learn and make a lasting impact in tech.
         </p>
-        <div className="flex justify-start">
+        <motion.div
+          className="flex justify-start"
+          whileHover={{ y: [0, -10, 5, 0] }}
+          transition={spring}
+        >
           <a
             className="p-2  font-light border border-white rounded-sm hover:bg-red-700 hover:border-black hover:text-black"
             rel="noopener"
@@ -39,7 +44,7 @@ function Hero() {
           >
             Connect with me!
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
