@@ -173,6 +173,10 @@ export const SocialLinks: Data.SocialLinks[] = [
     name: "Github",
     link: "https://github.com/kulahad",
   },
+  {
+    name: "GithubPortfolio",
+    link: "https://github.com/kulahad/kulahad.github.io",
+  },
 ];
 
 export const SongsId: string[] = [
@@ -233,16 +237,16 @@ export const Greetings: string[] = [
   "Hello", // English
   "Hola", // Spanish
   "Bonjour", // French
+  "Salam", // Arabic
   "Hallo", // German
   "Ciao", // Italian
+  "Hej", // Swedish
   "Olá", // Portuguese
+  "Merhaba", // Turkish
+  "Sawubona", // Zulu
   "Привет", // Russian
   "नमस्ते", // Hindi
   "你好", // Chinese (Mandarin)
   "こんにちは", // Japanese
   "안녕하세요", // Korean
-  "Merhaba", // Turkish
-  "Salam", // Arabic
-  "Sawubona", // Zulu
-  "Hej", // Swedish
 ];
