@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect";
-import { Greetings, SongsId } from "../application/Data";
+import { Greetings, SocialLinks, SongsId } from "../application/Data";
 
 function Footer() {
   const song = SongsId[Math.floor(Math.random() * SongsId.length)];
@@ -32,11 +32,41 @@ function Footer() {
           <p>Dont like this song? Refresh the page to get a new one.</p>
         </div>
         <div className="flex flex-col justify-evenly font-light text-lg">
-          <div className="m-1 hover:animate-bounce">Email me</div>
-          <div className="m-1 hover:animate-bounce">Checkout my Projects</div>
-          <div className="m-1 hover:animate-bounce">Message me on Linkedin</div>
           <div className="m-1 hover:animate-bounce">
-            Like my portfolio? - Leave a star on my github page
+            <a
+              title="Email link"
+              target="_blank"
+              href={SocialLinks.find((x) => x.name === "Email")?.link}
+            >
+              Email me
+            </a>
+          </div>
+          <div className="m-1 hover:animate-bounce">
+            <a
+              title="Email link"
+              target="_blank"
+              href={SocialLinks.find((x) => x.name === "Github")?.link}
+            >
+              Checkout my Projects
+            </a>
+          </div>
+          <div className="m-1 hover:animate-bounce">
+            <a
+              title="Email link"
+              target="_blank"
+              href={SocialLinks.find((x) => x.name === "LinkedIn")?.link}
+            >
+              Message me on Linkedin
+            </a>
+          </div>
+          <div className="m-1 hover:animate-bounce">
+            <a
+              title="Email link"
+              target="_blank"
+              href={SocialLinks.find((x) => x.name === "GithubPortfolio")?.link}
+            >
+              Like my portfolio? - Leave a star on my github page
+            </a>
           </div>
         </div>
       </div>
