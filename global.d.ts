@@ -20,7 +20,7 @@ declare namespace Api {
 
 declare namespace Data {
   export interface SocialLinks {
-    name: "LinkedIn" | "Email" | "Github";
+    name: "LinkedIn" | "Email" | "Github" | "GithubPortfolio";
     link: string;
   }
   export interface EducationEntry {
