@@ -5,7 +5,6 @@ import Document, {
   NextScript,
   DocumentContext,
 } from "next/document";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 
 class AppDocument extends Document {
@@ -39,7 +38,6 @@ class AppDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <GoogleAnalytics gaId="G-258YQEEJME" />
         </body>
       </Html>
     );
