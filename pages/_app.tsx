@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import LogRocket from "logrocket";
 import { useEffect } from "react";
 import Head from "next/head";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -27,6 +28,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:image" content="/images/framedpfp.png" />
       </Head>
       <Component {...pageProps} />
+      <GoogleAnalytics gaId="G-258YQEEJME" />
     </>
   );
 }
