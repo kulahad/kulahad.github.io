@@ -48,13 +48,13 @@ function TimelineItem({
               </span>
             )}
           </h3>
-          <time className="block mb-2 text-sm font-normal leading-2 text-gray-400 dark:text-gray-500 ">
-            {period}
-          </time>
-          <div className="block mb-2 text-sm font-normal leading-2 text-gray-400 dark:text-gray-500 ">
+          <div className="block mb-1 text-md font leading-2 text-yellow-100 dark:text-yellow-50 ">
             {company} {location}
           </div>
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+          <time className="block mb-1 text-sm font-normal leading-2 text-gray-400 dark:text-gray-500 ">
+            {period}
+          </time>
+          <p className="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">
             {description}
           </p>
         </li>
