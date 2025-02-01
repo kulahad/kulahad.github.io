@@ -25,11 +25,11 @@ function Hero() {
           </span>
         </h1>
         <p className="my-2 text-lg font-thin leading-6 ">
-          Software Engineer, currently a Technical Consultant at DXC Technology,
-          specializing in .NET, front-end tech, and cloud computing. Passionate
-          about crafting innovative, custom solutions that push boundaries —
-          from Microsoft D365 customizations to product development — I&apos;m
-          always eager to learn and make a lasting impact in tech.
+          Software Engineer, currently a Senior Software Enigneer at KPMG AU,
+          specializing in full-stack and cloud computing tech. Passionate about
+          crafting innovative, custom solutions that push boundaries — from
+          backend to frontend — I&apos;m always eager to learn and make a
+          lasting impact in tech.
         </p>
         <motion.div
           className="flex justify-start"

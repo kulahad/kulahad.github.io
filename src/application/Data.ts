@@ -1,10 +1,18 @@
 export const Experience: Data.ExperienceEntry[] = [
   {
+    name: "Senior Software Developer",
+    period: "October 2024 - Present",
+    company: "KPMG",
+    location: "Nadi, Fiji Islands",
+    current: true,
+    description:
+      "Working for CTG Division on secondment basis for KPMG AU, developing apps which help other divisions within the company.",
+  },
+  {
     name: "Associate Technical Consultant - Microsoft Practice",
-    period: "January 2022 - Present",
+    period: "January 2022 - September 2024",
     company: "DXC Technology",
     location: "Suva, Fiji Islands",
-    current: true,
     description:
       "Implementing Microsoft D365 Finance and Operations customizations and developing ISV products. Supporting customers through hyper care and post-go-live phases. Developing custom applications using PowerApps, React, and Web API to deliver tailored client solutions.",
   },
@@ -17,7 +25,7 @@ export const Experience: Data.ExperienceEntry[] = [
       "Developed educational and custom applications to assist students and staff. Performed graphic design and video editing tasks to enhance educational resources.",
   },
   {
-    name: "Developer – Technical Department",
+    name: "Developer",
     period: "June 2020 - September 2020",
     company: "QIT Pacific",
     location: "Sports City, Suva, Fiji Islands",
@@ -25,7 +33,7 @@ export const Experience: Data.ExperienceEntry[] = [
       "Developed software solutions for local clients. Conducted requirements engineering and analysis to ensure project success.",
   },
   {
-    name: "Developer – Technical Services",
+    name: "Graduate Developer",
     period: "November 2019 - May 2020",
     company: "Acton",
     location: "Suva, Fiji Islands",
